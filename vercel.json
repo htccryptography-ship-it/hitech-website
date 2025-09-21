@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "hitech-website",
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
+}
