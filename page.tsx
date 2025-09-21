@@ -12,8 +12,8 @@ const data = [
 
 const COLORS = ["#00C49F", "#FFBB28", "#FF8042", "#0088FE"];
 
-// sementara hardcode biar deploy sukses
-const TOKEN_CONTRACT = "0x1234567890abcdef1234567890abcdef12345678";
+// alamat kontrak asli
+const TOKEN_CONTRACT = "0xea0C6476437b046C464e3b9E75A865B6A3A1c925";
 
 export default function Home() {
   return (
@@ -42,7 +42,10 @@ export default function Home() {
                 label
               >
                 {data.map((_, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
                 ))}
               </Pie>
               <Tooltip />
